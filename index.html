@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    /* Estilização básica para melhor visualização */
+    form {
+      max-width: 300px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], input[type="submit"] {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
 <body>
 
-<h2>HTML Forms</h2>
+<h2>Formulário HTML</h2>
 
-<form action="">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="Patrícia"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Zeglen"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+<form action="/submit" method="post">
+  <label for="fname">Primeiro Nome:</label>
+  <input type="text" id="fname" name
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "".</p>
-
-</body>
-</html>
